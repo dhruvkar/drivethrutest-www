@@ -1,0 +1,56 @@
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="google" content="notranslate">
+<meta http-equiv="Content-Language" content="en">
+
+<!---Favicon. Query params added to bust cache-->
+<link rel="icon" href="/favicon.ico?v=1.1"> 
+
+<!--- CSS FILES -->
+<!--Bootstrap CSS (140 kb) -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
+<!--Font Awesome CSS (31 kb) -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
+
+
+<!-- JAVASCRIPT FILES -->
+<!--JQuery JS (87 kb) -->
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<!--Bootstrap 4.0 + Popper JS (71 kb) -->
+<script src="{{ .Site.BaseURL }}js/bootstrap.bundle.min.js"></script>
+<!--List.js for search/filter (18 kb). Needs lodash.js (27 kb) -->
+<script src="{{ .Site.BaseURL }}js/lodash.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/list.min.js"></script>
+<!-- Lazy Loading Library (4 kb) -->
+<script src="{{ .Site.BaseURL }}js/lazyload.min.js"></script>
+
+
+<!--Google Analytics-->
+{{ partial "ga.html" . }}
+
+{{ if isset .Params "customtitle" }}
+    <title>{{ .Title }}</title>
+{{ else }}
+    <title>{{ title .Title }} | {{ .Site.Title }}</title>
+{{ end }}
+
+<meta name="keywords" content="{{ .Keywords }}">
+<meta name="description" content="{{ .Description | default .Site.Params.SiteDescription}}" />
+
+<!-- Responsivity for older IE -->
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+
+
+<!-- Twitter Tags -->
+<meta name="twitter:card"         content="summary" />
+<meta name="twitter:site"         content="@drivethrutest" />
+<meta name="twitter:title"        content="{{ .Title }}" />
+<meta name="twitter:image"        content="{{ .Site.BaseURL }}{{ .Params.Img | default .Site.Params.Img}}" />
+<meta name="twitter:description"  content="{{ .Description | default .Site.Params.SiteDescription}}" />

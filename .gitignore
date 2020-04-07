@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+*.swp
+Icon*
+*.log
+__pycache__
+.vscode/
+.python-version

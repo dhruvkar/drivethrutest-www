@@ -1,0 +1,15 @@
+languageCode = "en-us"
+title = "Find COVID-19 (Coronavirus) Drive-Thru Testing Near You"
+baseURL = "https://www.drivethrutest.org/"
+
+disableKinds = ["taxonomy", "taxonomyTerm"] 
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+  extensions = ["hardLineBreak"]
+
+
+[params]
+    sitedescription = "Find Drive-Thru COVID-19 (Coronavirus) testing near you. This is a work in progress and new testing sites are being added everyday"
+    img = "img/main.jpg"

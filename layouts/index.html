@@ -7,21 +7,32 @@
 </head>
 <body style="background-color: #d9d9d9;">
 
+<header>
+  {{ partial "signup_success.html" . }}
+</header>
  
  <div class="container ">
- 	<div class="row">
- 		<div class="col text-center">
- 			<img class="  my-3 rounded img-fluid" src="{{ .Site.BaseURL }}img/main.jpg" />
+
  	<div class="row mb-3">
  		<div class="col text-center mb-3">
- 		  <h2 class="h2 my-3"><strong>COVID-19 Drive-Thru Testing</strong></h2>
+ 		  <h2 class="h2 my-3"><strong>Coronavirus (COVID-19) Drive-Thru Testing Sites</strong></h2>
  	    </div>
  	</div>
 
+ 	<div class="row">
+ 		<div class="col text-center">
+ 			<div class="text-muted">We send you new testing sites as they are added.</div>
+ 		</div>
+ 	</div>
+ 	
+ 	<div class="row justify-content-center my-3">
+ 		{{ partial "form.html" . }}
+ 	</div>
+ 
 
- 	<div class="row my-3">
+ 	<div class="row my-3 justify-content-center ">
  	 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical ">
  			<a class="muted btn btn-primary " href="/al/">Alabama</a>
  			<a class="btn btn-primary " href="/ak/">Alaska</a>
@@ -35,7 +46,7 @@
  		  </div>
  		</div>
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  			<a class="btn btn-primary " href="/fl/">Florida</a>
  			<a class="btn btn-primary " href="/ga/">Georgia</a>
@@ -48,7 +59,7 @@
  		  </div>
  		</div>
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  			<a class="btn btn-primary " href="/ky/">Kentucky</a>
  			<a class="btn btn-primary " href="/la/">Louisiana</a>
@@ -61,7 +72,7 @@
  		  </div>
  		</div>
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  			<a class="btn btn-primary" href="/mo/">Missouri</a>
  			<a class="btn btn-primary " href="/mt/">Montana</a>
@@ -74,7 +85,7 @@
  		  </div>
  		</div>
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  		  	<a class="btn btn-primary " href="/nc/">North Carolina</a>
  			<a class="btn btn-primary " href="/nd/">North Dakota</a>
@@ -89,7 +100,7 @@
  		  </div>
  		</div>
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  		  	<a class="btn btn-primary " href="/sd/">South Dakota</a>
  			<a class="btn btn-primary " href="/tn/">Tennessee</a>
@@ -105,7 +116,7 @@
  		</div>
 
 
- 		<div class="col-sm my-1">
+ 		<div class="col-sm my-1 text-center">
  		  <div class="btn-group-vertical">
  		  	<a class="btn btn-primary " href="/wv/">West Virginia</a>
  			<a class="btn btn-primary " href="/wi/">Wisconsin</a>
@@ -114,8 +125,12 @@
  		</div>
 
     </div>
- 	
+</div>
 
+<footer>
+	{{ partial "footer.html" . }}
+
+</footer>
 
 </body>
 </html>

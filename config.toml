@@ -14,3 +14,5 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
     sitedescription = "Find Drive-Thru COVID-19 (Coronavirus) testing near you. This is a work in progress and new testing sites are being added everyday"
     img = "img/main.jpg"
+    twitter = "https://www.twitter.com/drivethrutest"
+    patreon = "https://www.patreon.com/drivethrutest"

@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
 <!--Font Awesome CSS (31 kb) -->
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
-
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/leaflet.css">
 
 <!-- JAVASCRIPT FILES -->
 <!--JQuery JS (87 kb) -->
@@ -32,11 +32,8 @@
 <!--Google Analytics-->
 {{ partial "gtm.html" . }}
 
-{{ if isset .Params "customtitle" }}
-    <title>{{ .Title }}</title>
-{{ else }}
-    <title>{{ title .Title }} | {{ .Site.Title }}</title>
-{{ end }}
+
+<title>{{ .Title }}</title>
 
 <meta name="keywords" content="{{ .Keywords }}">
 <meta name="description" content="{{ .Description | default .Site.Params.SiteDescription}}" />

@@ -6,3 +6,4 @@ Icon*
 __pycache__
 .vscode/
 .python-version
+google.json

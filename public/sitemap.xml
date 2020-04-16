@@ -11,4 +11,21 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>https://www.drivethrutest.org/mo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.drivethrutest.org/drivethrus/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.drivethrutest.org/drivethrus/mo/1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.drivethrutest.org/drivethrus/mo/2/</loc>
+  </url>
+  
 </urlset>
